@@ -1,0 +1,14 @@
+/* Banner */
+
+.carousel-caption {
+    right: 55% !important;
+    bottom: 11.25rem !important;
+    color: #fff;
+    text-align: left !important;
+}
+
+/* Product details page  */
+
+.productdetail ul li {
+    list-style: none;
+}
