@@ -7,6 +7,9 @@ Cart
 
 <div class="container">
     <div class="row">
+        @php
+        $total = 0;
+        @endphp
 
         @foreach ($cartdata as $prod)
         <div class="col-md-3">
@@ -23,7 +26,15 @@ Cart
             <a href="/removeitem/{{$prod->cart_id}}" class="btn btn-danger">Delete</a>
 
         </div>
+        @php
+        $total += $prod->selling_price ;
+        @endphp
         @endforeach
+    </div>
+
+    <div class="card-footer">
+        <h6>Total Price {{$total}}</h6>
+        <a href="{{ url('checkout')}}" class="btn btn-success">Proceed to Checkout</a>
     </div>
 </div>
 
