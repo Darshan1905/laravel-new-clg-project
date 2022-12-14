@@ -7,6 +7,7 @@ Cart
 
 <div class="container">
     <div class="row">
+        @if($cartdata->count() > 0)
         @php
         $total = 0;
         @endphp
@@ -36,6 +37,16 @@ Cart
         <h6>Total Price {{$total}}</h6>
         <a href="{{ url('checkout')}}" class="btn btn-success">Proceed to Checkout</a>
     </div>
+    @else
+    <div class="card-body text-center"> 
+        <h2> Your Cart is Empty</h2>
+        <a href="{{ url('category')}}" class="btn btn-outline-primary float-end">Continue Shopping </a>
+
+        @endif
+
+    </div>
 </div>
+
+
 
 @endsection
