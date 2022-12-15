@@ -6,8 +6,9 @@ Products
 @section('content')
 
 <div class="container">
+
     <div class="row">
-        <h2>{{$category->name}}</h2>
+        <h1 class="mt-5 mb-5">Category:- {{$category->name}}</h1>
         @foreach ($products as $prod)
         <div class="col-md-3">
             <a href="{{url('product_detail/'.$prod->id)}}">

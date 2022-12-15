@@ -5,7 +5,8 @@ Checkout
 @endsection
 @section('content')
 
-<div class="container">
+<div class="container mt-5 pt-2">
+    <h1 class="mb-5">Checkout</h1>
     <div class="row">
         <div class="col-md-7">
             <div class="card">
