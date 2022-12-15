@@ -10,6 +10,8 @@
                 <a class="nav-link active" aria-current="page" href="{{url('/')}}">Home</a>
                 <a class="nav-link active" href="{{url('category')}}">Category</a>
                 <a class="nav-link active" href="{{url('cart')}}">Cart</a>
+                <a class="nav-link active" href="{{url('my-orders')}}">My Orders</a>
+
 
 
             </div>

@@ -8,6 +8,7 @@ Cart
 <div class="container mt-5 mb-5">
     <h1 class="mb-5">Shopping Cart</h1>
     <div class="row">
+        @if($cartdata->count() > 0)
         @php
         $total = 0;
         @endphp
@@ -53,9 +54,16 @@ Cart
             </div>
         </div>
     </div>
+    @else
+    <div class="card-body text-center"> 
+        <h2> Your Cart is Empty</h2>
+        <a href="{{ url('category')}}" class="btn btn-outline-primary float-end">Continue Shopping </a>
 
+        @endif
 
-
+    </div>
 </div>
+
+
 
 @endsection
