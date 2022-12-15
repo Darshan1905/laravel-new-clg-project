@@ -6,6 +6,7 @@ Welcome to Estore
 @section('content')
 
 <div class="container">
+    <h1 class="mt-5 mb-5">All Categories</h1>
     <div class="row">
         @foreach ($category as $prod)
         <div class="col-md-3">
